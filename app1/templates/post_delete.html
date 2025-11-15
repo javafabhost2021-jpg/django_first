@@ -1,0 +1,7 @@
+<form method="post">
+     {% csrf_token %}
+    <h2>{{ Post.title }}</h2>
+     <button type="submit" class="btn btn-danger">delete post</button>
+     <a href="{% url 'post_list' %}"> cancle </a>
+
+</form>
